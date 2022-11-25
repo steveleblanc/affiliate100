@@ -21,7 +21,7 @@ class AffiliateController extends Controller
     public function index()
     {
         // where the text file is stored
-        $path = Storage::get('public/affiliates2.txt');
+        $path = Storage::get('public/affiliates.txt');
         // reformat invalid json
         $JsonAddCommas = str_replace("}", "},", $path);
         // remove the very last comma and wrap it all in []
